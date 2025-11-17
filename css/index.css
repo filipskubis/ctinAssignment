@@ -1,0 +1,30 @@
+@import "./base/_reset.css";
+@import "./base/_variables.css";
+@import "./base/_typography.css";
+@import "components/navbar.css";
+@import "components/mobile-sidebar.css";
+@import "./components/search-bar.css";
+
+.app-container {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop {
+    display: revert;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}

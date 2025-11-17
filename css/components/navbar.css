@@ -1,0 +1,63 @@
+.navbar__main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    #2eaaaf 0%,
+    #2eaaaf 70%,
+    #f5a623 70%,
+    #f5a623 76%,
+    #2ead9c 76%,
+    #2ead9c 82%,
+    #ff6b6b 82%,
+    #ff6b6b 88%,
+    #56e051 88%,
+    #56e051 94%,
+    #2e4caf 94%,
+    #2e4caf 100%
+  );
+}
+
+.navbar__navigation {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.mobileLogo {
+  width: 32px;
+  height: auto;
+}
+.navbar__welcome.mobile {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomeText p {
+  opacity: 0.6;
+  font-size: 14px;
+}
+.navbar__controls {
+  display: flex;
+  gap: 4px;
+}
