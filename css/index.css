@@ -4,11 +4,23 @@
 @import "components/navbar.css";
 @import "components/mobile-sidebar.css";
 @import "./components/search-bar.css";
+@import "./components/main.css";
+@import "./components/tabs.css";
+@import "./components/card.css";
+@import "./components/db-search-bar.css";
+@import "./components/calc.css";
+@import "./components/scrollable-list.css";
 
 .app-container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: var(--background-color);
+}
+.title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--primary-color);
 }
 
 .desktop {
@@ -26,5 +38,6 @@
 
 button {
   border: none;
+  cursor: pointer;
   background-color: transparent;
 }

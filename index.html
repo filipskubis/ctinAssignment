@@ -8,6 +8,7 @@
   </head>
   <body>
     <!-- Mobile Sidebar -->
+
     <div class="mobile-sidebar" id="mobileSidebar">
       <div class="mobile-sidebar__header">
         <img src="./assets/logoIcon.png" class="mobileLogo" />
@@ -131,17 +132,418 @@
           </div>
         </div>
       </div>
-      <div class="search-container">
-        <div class="search-bar">
-          <button class="search-button">
-            <img src="./assets/search2.png" alt="Search" class="search-icon" />
-          </button>
-          <input
-            type="text"
-            placeholder="Wpisz nazwę leku, suplementu lub substancji czynnej"
-            class="search-input"
-          />
+      <div class="main">
+        <div class="search-container">
+          <div class="search-bar">
+            <button class="search-button">
+              <img
+                src="./assets/search2.png"
+                alt="Search"
+                class="search-icon"
+              />
+            </button>
+            <input
+              type="text"
+              placeholder="Wpisz nazwę leku, suplementu lub substancji czynnej"
+              class="search-input"
+            />
+          </div>
         </div>
+
+        <div class="tabs-container">
+          <div class="tabs-nav">
+            <div class="title">
+              <h2>Najnowsze artkuły</h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#2cadb4"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </div>
+            <button class="tab-button active" data-tab="all">
+              Przeglądaj specjalizacje
+            </button>
+            <button class="tab-button" data-tab="interna">Interna</button>
+            <button class="tab-button" data-tab="dermatologia">
+              Dermatologia
+            </button>
+            <button class="tab-button" data-tab="kardiologia">
+              Kardiologia
+            </button>
+          </div>
+
+          <div class="tab-content active" id="dermatologia">
+            <div class="article-container">
+              <article class="article-card">
+                <div class="article-image-container">
+                  <img
+                    src="./assets/thumbnails/1.png"
+                    alt=""
+                    class="article-image"
+                  />
+                </div>
+                <div class="article-content">
+                  <h3 class="article-title">
+                    Ważne składniki dermokosmetyków na AZS
+                  </h3>
+                  <p class="article-excerpt">Dermatologia</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-content active" id="dermatologia">
+            <div class="article-container">
+              <article class="article-card">
+                <div class="article-image-container">
+                  <img
+                    src="./assets/thumbnails/2.png"
+                    alt=""
+                    class="article-image"
+                  />
+                </div>
+                <div class="article-content">
+                  <h3 class="article-title">
+                    Ważne składniki dermokosmetyków na AZS
+                  </h3>
+                  <p class="article-excerpt">Dermatologia</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-content active" id="interna">
+            <div class="article-container">
+              <article class="article-card">
+                <div class="article-image-container">
+                  <img
+                    src="./assets/thumbnails/3.png"
+                    alt=""
+                    class="article-image"
+                  />
+                </div>
+                <div class="article-content">
+                  <h3 class="article-title">
+                    Poznaj kremy na atopowe zapalenie skóry bez recepty!
+                  </h3>
+                  <p class="article-excerpt">Leki bez recepty</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-content active" id="dermatologia">
+            <div class="article-container">
+              <article class="article-card">
+                <div class="article-image-container">
+                  <img
+                    src="./assets/thumbnails/4.png"
+                    alt=""
+                    class="article-image"
+                  />
+                </div>
+                <div class="article-content">
+                  <h3 class="article-title">
+                    Poznaj kremy na atopowe zapalenie skóry bez recepty!
+                  </h3>
+                  <p class="article-excerpt">Dermatologia</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-content active" id="dermatologia">
+            <div class="article-container">
+              <article class="article-card">
+                <div class="article-image-container">
+                  <img
+                    src="./assets/thumbnails/5.png"
+                    alt=""
+                    class="article-image"
+                  />
+                </div>
+                <div class="article-content">
+                  <h3 class="article-title">
+                    Nowe leki w 2025 roku - jakie zmiany czekają pacjentów
+                  </h3>
+                  <p class="article-excerpt">Dermatologia</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-content active" id="interna">
+            <div class="article-container">
+              <article class="article-card">
+                <div class="article-image-container">
+                  <img
+                    src="./assets/thumbnails/6.png"
+                    alt=""
+                    class="article-image"
+                  />
+                </div>
+                <div class="article-content">
+                  <h3 class="article-title">
+                    Nowe leki w 2025 roku - jakie zmiany czekają pacjentów
+                  </h3>
+                  <p class="article-excerpt">Leki bez recepty</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="calc__container">
+          <div class="title">
+            <h2>Mój kalkulator</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#2cadb4"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </div>
+          <div class="calc__content">
+            <div class="calc__form">
+              <label for="masa" class="calc__label">
+                <p class="calc__label__title">Masa ciała dziecka</p>
+                <div class="calc__input__wrapper">
+                  <input type="text" id="masa" class="calc__input" />
+                  <p class="calc__input__unit">kg</p>
+                </div>
+              </label>
+              <label for="lek" class="calc__label">
+                <p class="calc__label__title">Wybierz lek</p>
+                <div class="select-wrapper">
+                  <select id="lek" class="select-input">
+                    <option value="paracetamol_syrop">
+                      Paracetamol (120mg/5ml)
+                    </option>
+                    <option value="ibuprofen_syrop">
+                      Ibuprofen (100mg/5ml)
+                    </option>
+                    <option value="amoksycylina">
+                      Amoksycylina (400mg/5ml)
+                    </option>
+                  </select>
+                  <div class="select-arrow">
+                    <span>▼</span>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <button class="calc__button">Oblicz</button>
+          </div>
+        </div>
+        <div class="card__container">
+          <div class="title">
+            <h2>Dawkowanie</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#2cadb4"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </div>
+
+          <div class="card__content">
+            <div class="card__content__title">
+              <img src="./assets/dosage.png" alt="" />
+              <p>Sprawdź dawkowanie</p>
+            </div>
+            <div class="card__search-bar">
+              <button class="card__search-button">
+                <img
+                  src="./assets/search2.png"
+                  alt="Search"
+                  class="search-icon"
+                />
+              </button>
+              <input
+                type="text"
+                placeholder="Wpisz nazwę leku"
+                class="card__search-input"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card__container">
+          <div class="title">
+            <h2>Interakcje</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#2cadb4"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </div>
+          <div class="card__content">
+            <div class="card__content__title">
+              <img src="./assets/interactions.png" alt="" />
+              <p>Sprawdź interakcje</p>
+            </div>
+            <div class="card__search-bar">
+              <button class="card__search-button">
+                <img
+                  src="./assets/search2.png"
+                  alt="Search"
+                  class="search-icon"
+                />
+              </button>
+              <input
+                type="text"
+                placeholder="Wpisz nazwę leku"
+                class="card__search-input"
+              />
+            </div>
+          </div>
+        </div>
+        <img src="./assets/bannery/2.png" alt="" />
+        <div class="db-search-container">
+          <div class="db-search-bar">
+            <div class="db-search-title">
+              <button class="db-search-button">
+                <img
+                  src="./assets/database.png"
+                  alt="Search"
+                  class="db-search-icon"
+                />
+              </button>
+              <p class="db-search-text">Wyszukaj w bazie</p>
+            </div>
+            <div class="db-select">
+              <span class="db-select__measure" aria-hidden="true"></span>
+              <select
+                name="database"
+                id="database-select"
+                aria-label="Select database"
+              >
+                <option value="baza1">Baza ChPL</option>
+                <option value="baza2">Baza Leków</option>
+                <option value="baza3">Baza Substancji</option>
+                <option value="baza4">Baza Chorób</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#2cadb4"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="db-select__chevron"
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scrollable List Component -->
+        <div class="scrollable-list-container">
+          <button
+            class="scroll-button scroll-button--left"
+            aria-label="Scroll left"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-first-icon lucide-chevron-first"
+            >
+              <path d="m17 18-6-6 6-6" />
+              <path d="M7 6v12" />
+            </svg>
+          </button>
+
+          <div class="scrollable-list">
+            <div class="scrollable-content">
+              <div class="scrollable-item">
+                <div class="item-content">Item 1</div>
+              </div>
+              <div class="scrollable-item">
+                <div class="item-content">Item 2</div>
+              </div>
+              <div class="scrollable-item">
+                <div class="item-content">Item 3</div>
+              </div>
+              <div class="scrollable-item">
+                <div class="item-content">Item 4</div>
+              </div>
+              <div class="scrollable-item">
+                <div class="item-content">Item 5</div>
+              </div>
+              <div class="scrollable-item">
+                <div class="item-content">Item 6</div>
+              </div>
+              <div class="scrollable-item">
+                <div class="item-content">Item 7</div>
+              </div>
+              <div class="scrollable-item">
+                <div class="item-content">Item 8</div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="scroll-button scroll-button--right"
+            aria-label="Scroll right"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-last-icon lucide-chevron-last"
+            >
+              <path d="m7 18 6-6-6-6" />
+              <path d="M17 6v12" />
+            </svg>
+          </button>
+        </div>
+        <img src="./assets/bannery/3.png" alt="" />
+        <img src="./assets/bannery/4.png" alt="" />
       </div>
     </div>
     <script type="module" src="./js/app.js"></script>

@@ -1,0 +1,47 @@
+.scrollable-list-container {
+  position: relative;
+  background-color: white;
+  border-radius: 16px;
+  padding: 16px 40px;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-button--right {
+  right: 8px;
+}
+
+.scroll-button--left {
+  left: 8px;
+}
+
+.scrollable-list {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrollable-content {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none; /* optional */
+}
+
+.item-content {
+  color: #7d9b9d;
+}
+.scrollable-item {
+  flex: 0 0 auto;
+  margin-right: 16px;
+  width: 200px;
+  border-radius: 16px;
+  background-color: #2cadb420;
+  border: 2px solid #2cadb440;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
