@@ -10,7 +10,12 @@
 @import "./components/db-search-bar.css";
 @import "./components/calc.css";
 @import "./components/scrollable-list.css";
+@import "./components/desktop-sidebar.css";
 
+html,
+body {
+  min-height: fit-content;
+}
 .app-container {
   height: 100%;
   width: 100%;
@@ -27,17 +32,17 @@
   display: none;
 }
 
-@media (min-width: 768px) {
-  .desktop {
-    display: revert;
-  }
-  .mobile {
-    display: none;
-  }
-}
-
 button {
   border: none;
   cursor: pointer;
   background-color: transparent;
+}
+
+@media (min-width: 1440px) {
+  .desktop {
+    display: revert !important;
+  }
+  .mobile {
+    display: none !important;
+  }
 }

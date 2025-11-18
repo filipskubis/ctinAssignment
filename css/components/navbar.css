@@ -7,15 +7,22 @@
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #f2fafa;
+  z-index: 9999;
+}
+.navbarGuide {
+  height: 130px;
 }
 
 .navbar::after {
   content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: 0px;
   left: 0;
   right: 0;
   height: 2px;
@@ -60,4 +67,24 @@
 .navbar__controls {
   display: flex;
   gap: 4px;
+}
+
+@media (min-width: 1440px) {
+  .navbar {
+    padding: 24px;
+  }
+  .navbar__logo {
+    display: flex;
+    gap: 32px;
+  }
+  .navbar::after {
+    height: 4px;
+  }
+  .navbar__controls button {
+    width: 80px;
+    height: auto;
+  }
+  .navbar__controls img {
+    transform: scale(1.2);
+  }
 }

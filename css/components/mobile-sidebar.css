@@ -6,7 +6,7 @@
   width: 280px;
   height: 100%;
   background-color: white;
-  z-index: 1000;
+  z-index: 10000;
   font-weight: 500;
   transition: transform 0.3s ease-in-out;
   display: flex;
@@ -190,4 +190,10 @@
 .no-scroll {
   overflow: hidden;
   height: 100%;
+}
+
+@media (min-width: 1440px) {
+  .mobile-sidebar {
+    display: none;
+  }
 }

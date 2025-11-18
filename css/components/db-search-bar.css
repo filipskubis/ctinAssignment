@@ -12,6 +12,8 @@
 }
 
 .db-search-bar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
   background-color: white;
   display: flex;
   align-items: center;
@@ -98,26 +100,25 @@
   height: 20px;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 1440px) {
   .db-search-container {
     padding: 0.75rem 1rem;
+    width: 100%;
+    height: fit-content;
   }
-
   .db-search-bar {
-    height: 44px;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 1rem;
+    outline: 12px solid white;
   }
 
-  .db-search-input {
-    font-size: 0.9rem;
-    padding: 0 0.75rem;
+  .db-search-text,
+  .db-select {
+    font-size: 1.25rem;
   }
 
-  .db-search-button {
-    width: 44px;
+  #database-select {
+    font-size: 1.1rem;
   }
-
-  .db-search-icon {
-    width: 18px;
-    height: 18px;
-  }
-} */
+}

@@ -1,6 +1,4 @@
 .tabs-container {
-  max-width: 1200px;
-  margin: 0 auto;
   background-color: white;
   border-radius: 16px;
   padding: 0 1rem;
@@ -15,6 +13,12 @@
   overflow-x: auto;
   padding-bottom: 0.5rem;
   scrollbar-width: none;
+}
+
+.tabs-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .tabs-nav::-webkit-scrollbar {
@@ -59,7 +63,6 @@
 
 /* Article Container */
 .article-container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -124,5 +127,125 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (min-width: 1440px) {
+  .tabs-container {
+    padding: 1rem;
+    max-width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .article-card {
+    height: 100%;
+  }
+  .article-image-container {
+    overflow: hidden;
+    height: 100%;
+    width: auto;
+  }
+  .article-image {
+    height: auto;
+    width: 128px;
+    margin: 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+  }
+
+  .article-image.big {
+    height: auto;
+    width: 256px;
+  }
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .article-card {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .article-container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .article-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+  .article-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: #333;
+    line-height: 1.3;
+  }
+
+  .article-excerpt {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .tabs-nav {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scrollbar-width: none;
+  }
+
+  .tabs-button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+  }
+
+  .tabs-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-button {
+    background: none;
+    border: none;
+    padding: 0.75rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+  }
+
+  .tab-button:focus-visible {
+    border-radius: 20px;
+  }
+  .tab-button.active {
+    position: relative;
+    background-color: transparent;
+    color: var(--primary-color);
+  }
+
+  .tab-button.active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  .tab-button:not(.active):hover {
+    background-color: transparent;
   }
 }
